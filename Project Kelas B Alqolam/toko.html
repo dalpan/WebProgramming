@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Al-Qolam | Alamat Retail Store| Al-Qolam</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="asset/bootstrap/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<style>
+.collapsible {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+<body>
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+		<br>
+			</br>
+            <li class="sidebar-brand" style="position:relative"><a href="index.html"><img src="asset/img/alqolamlogo.png"></a>
+            </li><br></br>
+			<center>
+            <li><a href="profil.html">Profile</a>
+            </li>
+            <li><a href="awards.html">Awards</a>
+            </li>
+            <li><a href="product.html">Product</a>
+            </li>
+            <li><a href="blog.html">Blog</a>
+            </li>
+            <li><a href="contact.html">Contact</a>
+            </li>
+            <li><a href="marketing-tool.html">Marketing Tool</a>
+            </li>
+            <li><a href="#">Pendaftaran Mitra</a>
+            </li>
+			<li><a href="toko.html">Alamat Toko/Retail</a>
+            </li><br></br>
+				<input style="text-align:center;font-style:italic;background-color:#000000;color:white" type="text" name="search" placeholder="Search this website...">
+			<br></br>
+				<a href="#"><img src="asset/img/facebook.png" width="34" height="34" alt="Facebook" /></a><a href="#"><img src="asset/img/instagram.png" width="34" height="34" alt="Instagram" /></a><a href="#"><img src="asset/img/twitter.png" width="34" height="34" alt="Twitter" /></a><a href="#"><img src="asset/img/youtube.png" width="34" height="34" alt="Youtube" /></a><br></br>
+				<p style="font-size:12px"> Copyright <a href="https://dalpan.web.id">Danang Avan Maulana</a></p>
+			</center>
+		</ul>
+    </div>
+    <a href="#menu-toggle" class="btn btn-light" id="menu-toggle">&#9776;</a>
+    
+      <!-- Page Content -->
+	  <div class="container">
+<h1 class="text-center"><u>Alamat Retail Store Al-Qolam</u></h1>
+<hr>
+
+<button class="collapsible">Ambon</button>
+<div class="content">
+<p>Gramedia Maluku City Ambon Jl. </b><br>Jend Sudirman No. 1 Tantui, Ambon</p>
+</div>
+<button class="collapsible">Maluku</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Makassar</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Jakarta</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Tegal</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Bandung</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Bogor</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Karawang</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Yogyakarta</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+<button class="collapsible">Surabaya</button>
+<div class="content">
+<p>Alamat Jalan Blablablabla</p>
+</div>
+
+  </div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="asset/jquery/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="asset/bootstrap/js/bootstrap.min.js"></script>
+<script>
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#wrapper").toggleClass("active");
+});
+</script>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
